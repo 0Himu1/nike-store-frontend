@@ -6,11 +6,6 @@ import Header from '@/components/Header';
 import './globals.css';
 import store from '../store/store';
 
-export const metadata = {
-	title: 'Nike Store',
-	description: 'Happiness fer you foot',
-};
-
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">

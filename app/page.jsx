@@ -3,6 +3,11 @@ import ProductCard from '@/components/ProductCard';
 import Wrapper from '@/components/Wrapper';
 import fetchData from './api/api';
 
+export const metadata = {
+	title: 'Nike Store',
+	description: 'Happiness fer you foot',
+};
+
 export default async function Home() {
 	const { data } = await fetchData('/api/products?populate=*');
 	return (
