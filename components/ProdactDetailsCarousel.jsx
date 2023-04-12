@@ -18,7 +18,7 @@ export default function ProdactDetailsCarousel({ images }) {
 				{images?.map(image => {
 					const { url, id, name } = image.attributes;
 
-					return (<img src={url} key={id} width={800} height={800} alt={name} />);
+					return <img src={url} key={id} width={800} height={800} alt={name} />;
 				})}
 			</Carousel>
 		</div>

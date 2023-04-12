@@ -80,7 +80,7 @@ export default async function page({ params }) {
 
 export async function generateStaticParams() {
 	const { data } = await fetchData('/api/categories?populate=*');
-	const paths = data.map(c => ({
+	const paths = data?.map(c => ({
 		params: { slug: c.attributes.slug },
 	}));
 	// console.log(paths);

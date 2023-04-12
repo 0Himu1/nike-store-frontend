@@ -191,7 +191,7 @@ export default function page({ params }) {
 
 export async function generateStaticParams() {
 	const { data } = await fetchData('/api/products?populate=*');
-	const paths = data.map(c => ({
+	const paths = data?.map(c => ({
 		params: { slug: c.attributes.slug },
 	}));
 	return paths;

@@ -58,7 +58,13 @@ export default function Header() {
 		>
 			<Wrapper className="flex items-center justify-between">
 				<Link href="/">
-					<Image src={logo} width={215} height={75} className="w-10 md:w-16" alt="logo" />
+					<Image
+						src={logo}
+						width={215}
+						height={75}
+						className="w-10 md:w-16"
+						alt="logo"
+					/>
 				</Link>
 				<Menu
 					showCat={showCat}
