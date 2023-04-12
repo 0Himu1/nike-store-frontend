@@ -26,7 +26,7 @@ export default function ProductCard({ product }) {
 		>
 			<Image
 				className="w-full"
-				src={image?.data[0].attributes.formats.medium.url}
+				src={thumbnail?.data.attributes.url}
 				width={500}
 				height={500}
 				alt={name}
